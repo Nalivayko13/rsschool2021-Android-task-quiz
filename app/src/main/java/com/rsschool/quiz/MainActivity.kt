@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity(), Navigator {
         for(i in 0..4){
             if(selecredAnswers[i]==correctAncwers[i]){count++}
             println(selecredAnswers[i])
+            println(correctAncwers[i])
         }
         return "правильно $count из 5"
     }

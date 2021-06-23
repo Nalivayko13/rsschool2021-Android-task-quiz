@@ -44,7 +44,7 @@ open class FragmentQuizOne : Fragment(){
                 group, checkedId -> val radio = binding.radioGroup.findViewById<RadioButton>(checkedId)
             Toast.makeText(context," On checked change : ${radio.text}", Toast.LENGTH_SHORT).show()
             selected = radio.text.toString()
-
+            navigator().add(0,selected)
             binding.nextButton.isEnabled = true
         })
 
